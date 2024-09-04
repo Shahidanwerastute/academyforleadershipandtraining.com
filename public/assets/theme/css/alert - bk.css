@@ -1,0 +1,266 @@
+.uk-notify {
+	z-index: 1114;
+	width: 400px;
+	top: 56px;
+	max-width: 100%
+}
+
+.uk-notify-top-left {
+	left: 24px
+}
+
+.uk-notify-top-right {
+	right: 24px
+}
+
+.uk-notify-bottom-left {
+	left: 24px
+}
+
+.uk-notify-bottom-right {
+	right: 24px
+}
+
+.uk-notify .uk-close {
+	display: none
+}
+
+.uk-notify .notify-action {
+	float: right;
+	text-transform: uppercase;
+	color: #8bc34a;
+	margin-left: 16px
+}
+
+.uk-notify .notify-action:hover {
+	color: #689f38
+}
+
+.uk-notify .notify-content {
+	overflow: hidden
+}
+
+.uk-notify {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1040;
+	box-sizing: border-box;
+	width: 350px
+}
+
+.uk-notify-bottom-right,
+.uk-notify-top-right {
+	left: auto;
+	right: 10px
+}
+.uk-notify-message {
+	background: #323232;
+	border-radius: 4px;
+	padding: 12px 16px;
+	font-size: 14px;
+	line-height: 18px;
+	border: none
+}
+.uk-notify-message-info {
+	background: #1976d2;
+	color: #fff
+}
+
+.uk-notify-message-success {
+	background: #7cb342
+}
+
+.uk-notify-message-warning {
+	background: #ffa000
+}
+
+.uk-notify-message-danger {
+	background: #e53935
+}
+
+.uk-notify-message-danger,
+.uk-notify-message-info,
+.uk-notify-message-success,
+.uk-notify-message-warning {
+	color: #fff
+}
+
+.uk-notify-message-danger .notify-action,
+.uk-notify-message-info .notify-action,
+.uk-notify-message-success .notify-action,
+.uk-notify-message-warning .notify-action {
+	color: #fff
+}
+
+.uk-notify-message-danger .notify-action:hover,
+.uk-notify-message-info .notify-action:hover,
+.uk-notify-message-success .notify-action:hover,
+.uk-notify-message-warning .notify-action:hover {
+	color: #fff;
+	text-decoration: underline
+}
+.uk-notify-message {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 15px;
+	background: #444;
+	color: #fff;
+	font-size: 16px;
+	line-height: 22px;
+	cursor: pointer;
+	border: 1px solid #444;
+	border-radius: 4px
+}
+
+.uk-notify-message>.uk-close {
+	visibility: hidden;
+	float: right
+}
+
+.uk-notify-message:hover>.uk-close {
+	visibility: visible
+}
+
+.uk-notify-message-primary {
+	background: #ebf7fd;
+	color: #2d7091;
+	border-color: rgba(45, 112, 145, .3)
+}
+
+.uk-notify-message-warning {
+	background: #fffceb;
+	color: #e28327;
+	border-color: rgba(226, 131, 39, .3)
+}
+
+.uk-notify-message-danger {
+	background: #fff1f0;
+	color: #d85030;
+	border-color: rgba(216, 80, 48, .3)
+}
+
+.uk-notify-bottom-center,
+.uk-notify-top-center {
+	left: 50%;
+	margin-left: -175px;
+	z-index: 9999;
+}
+
+.uk-notify-bottom-center,
+.uk-notify-bottom-left,
+.uk-notify-bottom-right {
+	top: auto;
+	bottom: 10px
+}
+
+.uk-notify-bottom-center,
+.uk-notify-top-center {
+	margin-left: -200px
+}
+
+.uk-notify-bottom-center,
+.uk-notify-bottom-left,
+.uk-notify-bottom-right {
+	top: auto;
+	bottom: 8px
+}
+
+/*preloader*/
+.content-preloader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 8px;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: top 400ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: top 400ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: top 400ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: top 400ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, transform 400ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.content-preloader .regular-preloader {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.content-preloader .regular-preloader > div {
+  width: 26px;
+  height: 26px;
+}
+.content-preloader.preloader-active {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: top 280ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  transition: top 280ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  transition: top 280ms cubic-bezier(0.4, 0, 0.2, 1), transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  transition: top 280ms cubic-bezier(0.4, 0, 0.2, 1), transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+}
+body > .content-preloader {
+  position: fixed;
+  z-index: 1099;
+  top: -48px;
+}
+body > .content-preloader.preloader-active {
+  top: 56px;
+}
+.md-preloader {
+  font-size: 0;
+  display: inline-block;
+  -webkit-animation: outer 6000ms linear infinite;
+  animation: outer 6000ms linear infinite;
+}
+.md-preloader svg {
+  -webkit-animation: inner 1200ms linear infinite;
+  animation: inner 1200ms linear infinite;
+}
+.md-preloader svg circle {
+  fill: none;
+  stroke: #448aff;
+  stroke-linecap: round;
+  -webkit-animation: arc 1200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: arc 1200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.md-preloader-success svg circle {
+  stroke: #7cb342;
+}
+.md-preloader-danger svg circle {
+  stroke: #e53935;
+}
+.md-preloader-warning svg circle {
+  stroke: #ffa000;
+}
+
+@media only screen and (max-width:767px) {
+	.uk-notify-bottom-center>.uk-notify-message,
+	.uk-notify-bottom-left>.uk-notify-message,
+	.uk-notify-bottom-right>.uk-notify-message,
+	.uk-notify-top-center>.uk-notify-message,
+	.uk-notify-top-left>.uk-notify-message,
+	.uk-notify-top-right>.uk-notify-message {
+		border-radius: 0;
+		padding: 16px 32px
+	}
+}
+
+@media only screen and (min-width:960px) {
+	.uk-notify-bottom-center,
+	.uk-notify-bottom-center {
+		margin-left: -80px
+	}
+}
+
+@media (max-width:479px) {
+	.uk-notify {
+		left: 10px;
+		right: 10px;
+		width: auto;
+		margin: 0
+	}
+}

@@ -1,0 +1,80 @@
+.BodyOverHidden {
+	overflow: hidden;
+}
+.optinFormWrapper {
+	position: fixed;
+	display: none;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 999;
+	overflow-y: scroll;
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+}
+.optinFormInerWrap {
+	background-color: rgba(0, 0, 0, 0) !important;
+	display: table !important;
+	height: 100%;
+	margin: auto;
+	max-width: inherit;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+.oFContainer {
+	background-color: rgba(0, 0, 0, 0.6);
+	background-image: none;
+	display: table-cell;
+	padding: 30px 0;
+	vertical-align: middle;
+}
+.oFTextArea {
+	background-color: #fff;
+	background-image: none;
+	border: 3px solid #45b2e4;
+	margin: 0 auto;
+	max-width: 840px;
+	padding: 20px;
+	position: relative;
+	width: 90%;
+	width: calc(100% - 40px);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+.oFTextArea.isActive {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.close-icon {
+	background-color: transparent;
+	background-image: url("../images/close-icon.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	border-radius: 50%;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+	height: 46px;
+	position: absolute;
+	right: -23px;
+	top: -23px;
+	width: 46px;
+}

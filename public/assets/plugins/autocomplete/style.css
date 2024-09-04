@@ -1,0 +1,68 @@
+.typeahead-search .typeahead__result .row {
+	display: table-row;
+}
+.typeahead-search .typeahead__result .row > * {
+	display: table-cell;
+	vertical-align: middle;
+}
+.typeahead-search .typeahead__result .username {
+	padding: 0 10px;
+}
+.typeahead-search .typeahead__result .id {
+	font-size: 12px;
+	color: #777;
+	font-variant: small-caps;
+}
+.typeahead-search .typeahead__result .avatar img {
+	height: 26px;
+	width: 26px;
+}
+.typeahead-search .typeahead__result .project-logo {
+	display: inline-block;
+	height: 100px;
+}
+.typeahead-search .typeahead__result .project-logo img {
+	height: 100%;
+}
+.typeahead-search .typeahead__result .project-information {
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px 0 0 20px;
+}
+.typeahead-search .typeahead__result .project-information > span {
+	display: block;
+	margin-bottom: 5px;
+}
+.typeahead-search .typeahead__result > ul > li > a small {
+	padding-left: 0px;
+	color: #999;
+}
+.typeahead-search .typeahead__result .project-information li {
+	font-size: 12px;
+}
+#main .typeahead-search button {
+	width: auto !important;
+}
+#main .typeahead-search input {
+	width: 100% !important;
+}
+#main .typeahead-search .js-typeahead-user_v1 {
+	margin: 0;
+	max-width: 100%;
+}
+.right-sc-wrap .typeahead__container .typeahead__item.typeahead__group-user {
+	margin-bottom: 0px;
+}
+.right-sc-wrap .typeahead__container .typeahead__item.typeahead__group-user a {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    text-align: left;	
+}
+.right-sc-wrap .typeahead__container .typeahead__item.typeahead__group-user a span.row {
+	float: left;
+    width: 100%;
+    line-height: normal;
+    margin: 0px;
+}

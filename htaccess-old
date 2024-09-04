@@ -1,0 +1,23 @@
+RewriteEngine on 
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L]
+
+### re-direct index.php to root / ###
+RewriteCond %{THE_REQUEST} ^.*\/index\.php\ HTTP/
+RewriteRule ^(.*)index\.php$ /$1 [R=301,L]
+
+### re-direct index.php to root / ###
+RewriteCond %{THE_REQUEST} ^.*\/index\ HTTP/
+RewriteRule ^(.*)index\.php$ /$1 [R=301,L]

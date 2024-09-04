@@ -1,0 +1,47 @@
+.mg-rows {
+    position:relative;
+}
+.mg-trigger{
+    cursor: pointer;
+}
+.mg-space {
+    display:none;
+    width:100%;
+    position: relative;
+    float:left;
+}
+.mg-target {
+    display:none;
+    background: #005598;
+    color: #fff;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+}
+.mg-target-open {
+    position:absolute;
+    top:0;left:0;right:0;
+}
+.mg-indicator {
+    border-bottom: 10px solid #005598;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.mg-close {
+    display: none;
+    background: url(cross.gif) no-repeat center center;
+    cursor: pointer;
+    height: 30px;
+    padding: 7px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    z-index: 2;
+}
+.mg-close:hover {
+    opacity: .5;
+}

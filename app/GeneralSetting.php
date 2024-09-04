@@ -1,0 +1,1 @@
+<?phpnamespace App;use Illuminate\Database\Eloquent\Model;use DB;class GeneralSetting extends Model{	protected $table = 'general_setting';		protected $primaryKey = 'id';		public $timestamps = true;		protected $fillable = array('title', 'description', 'logo', 'keywords', 'favicon', 'question_color', 'answer_color', 'survey_price', 'friend_assessment_price');}?>

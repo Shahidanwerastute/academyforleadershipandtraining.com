@@ -1,0 +1,1 @@
+<?phpnamespace App;use Illuminate\Database\Eloquent\Model;use DB;class Group extends Model{	protected $table = 'group';		protected $primaryKey = 'id';		public $timestamps = true;		protected $fillable = array('name', 'role_id', 'coupon', 'limit');}?>

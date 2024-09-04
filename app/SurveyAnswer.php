@@ -1,0 +1,1 @@
+<?phpnamespace App;use Illuminate\Database\Eloquent\Model;use DB;class SurveyAnswer extends Model{	protected $table = 'survey_answer';		protected $primaryKey = 'id';		public $timestamps = true;		protected $fillable = array('survey_submission_id', 'survey_field_id', 'answer', 'survey_field_value_id');}?>

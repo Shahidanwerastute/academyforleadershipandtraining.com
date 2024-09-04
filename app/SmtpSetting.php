@@ -1,0 +1,1 @@
+<?phpnamespace App;use Illuminate\Database\Eloquent\Model;use DB;class SmtpSetting extends Model{    protected $table = 'smtp_setting';		protected $primaryKey = 'id';		protected $fillable = ['host', 'type', 'port', 'username', 'password', 'email'];		public $timestamps = false;}?>

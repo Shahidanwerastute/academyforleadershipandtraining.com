@@ -1,0 +1,1 @@
+<?phpnamespace App;use Illuminate\Database\Eloquent\Model;use DB;class FriendAssessment extends Model{    protected $table = 'friend_assessment';    protected $primaryKey = 'id';    public $timestamps = true;    protected $fillable = array('name', 'last_name', 'email', 'is_submit', 'survey_submission_id', 'session_id', 'employee_id', 'last_friend');}?>

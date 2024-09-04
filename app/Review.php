@@ -1,0 +1,1 @@
+<?phpnamespace App;use Illuminate\Database\Eloquent\Model;use DB;class Review extends Model{	protected $table = 'review';		protected $primaryKey = 'id';		public $timestamps = true;		protected $fillable = array('name', 'email', 'website', 'comment', 'notify', 'blog_id', 'status');}?>

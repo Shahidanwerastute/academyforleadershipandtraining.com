@@ -1,0 +1,6 @@
+.jtable-child-row {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.4) inset;
+}
+.jtable-child-table-container {
+    padding: 0 25px 0 25px;
+}
